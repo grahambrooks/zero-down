@@ -1,0 +1,13 @@
+INSERT INTO users (name) VALUES ('Graham 1');
+INSERT INTO users (name) VALUES ('Graham 2');
+INSERT INTO users (name) VALUES ('Graham 3');
+INSERT INTO users (name) VALUES ('Graham 4');
+INSERT INTO users (name) VALUES ('Graham 5');
+INSERT INTO users (name) VALUES ('Graham 6');
+INSERT INTO users (name) VALUES ('Graham 7');
+INSERT INTO users (name) VALUES ('Graham 8');
+INSERT INTO users (name) VALUES ('Graham 9');
+INSERT INTO users (name) VALUES ('Graham 10');
+INSERT INTO users (name) VALUES ('Graham 11');
+INSERT INTO users (name) VALUES ('Graham 12');
+INSERT INTO users (name) VALUES ('Graham 13');
