@@ -21,7 +21,7 @@ get '/' do
 
   x= "<h1>Hello #{users.size} users</h1>"
   users.each do |user|
-    x += "<p>#{user.name}</p>"
+    x += "<p>#{user.username}</p>"
   end
   x
 end
