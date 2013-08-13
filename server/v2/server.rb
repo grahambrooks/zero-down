@@ -11,6 +11,11 @@ ActiveRecord::Base.establish_connection(
 )
 
 class User < ActiveRecord::Base
+  has_many :addresses, dependent: :destroy
+end
+
+class Address < ActiveRecord::Base
+  belongs_to :user
 end
 
 class App < Sinatra::Application
@@ -22,6 +27,9 @@ get '/' do
   x= "<h1>Hello #{users.size} users</h1>"
   users.each do |user|
     x += "<p>#{user.username}</p>"
+    user.addresses.each do |address|
+      x += "<p> address #{address.address_line_1} #{address.address_line_2}</p>"
+    end
   end
   x
 end
