@@ -24,7 +24,7 @@ end
 get '/' do
   users = User.all
 
-  x= "<h1>Hello #{users.size} users</h1>"
+  x= "<h1>Hello #{users.size} users V2</h1>"
   users.each do |user|
     x += "<p>#{user.username}</p>"
     user.addresses.each do |address|

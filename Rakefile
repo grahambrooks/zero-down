@@ -56,3 +56,4 @@ desc 'Reload HAProxy configuration'
 task :reload_proxy_config do
   command "haproxy -f cfg/haproxy.cfg -p $(<haproxy-private.pid) -st $(<haproxy-private.pid)"
 end
+
